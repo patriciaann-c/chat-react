@@ -6,7 +6,7 @@ export default async function OpenRouter(question) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authoriation': `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`
+                'Authorization': `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`
             },
             body: JSON.stringify(
                 {
