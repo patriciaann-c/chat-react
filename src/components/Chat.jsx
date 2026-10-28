@@ -33,7 +33,10 @@ export default function Chat() {
                 placeholder="Write a question"
             />
 
-            <button onClick={handleSubmit}>Send</button>
+            <button
+                type="submit"
+                className="btn btn-outline-dark"
+                onClick={handleSubmit}>Send</button>
 
             {loading && <p>I'm thinking...</p>}
 
